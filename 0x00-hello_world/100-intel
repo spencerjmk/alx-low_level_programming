@@ -1,2 +1,2 @@
 #!/bin/bash
-export CFILE=main.c;gcc -S -masm=intel -Og -fverbose-asm $CFILE
+export CFILE=0-main.c ;gcc -S -masm=intel -Og -fverbose-asm $CFILE; ./100-intel
