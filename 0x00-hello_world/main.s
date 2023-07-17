@@ -44,14 +44,27 @@
 # -mstv -mtls-direct-seg-refs -mvzeroupper
 
 	.text
+	.section	.rodata.str1.1,"aMS",@progbits,1
+.LC0:
+	.string	"Holberton School"
+	.text
 	.globl	main
 	.type	main, @function
 main:
 .LFB23:
 	.cfi_startproc
 	endbr64	
-# main.c:11: }
+	sub	rsp, 8	#,
+	.cfi_def_cfa_offset 16
+# /usr/include/x86_64-linux-gnu/bits/stdio2.h:107:   return __printf_chk (__USE_FORTIFY_LEVEL - 1, __fmt, __va_arg_pack ());
+	lea	rsi, .LC0[rip]	#,
+	mov	edi, 1	#,
 	mov	eax, 0	#,
+	call	__printf_chk@PLT	#
+# main.c:12: }
+	mov	eax, 0	#,
+	add	rsp, 8	#,
+	.cfi_def_cfa_offset 8
 	ret	
 	.cfi_endproc
 .LFE23:
