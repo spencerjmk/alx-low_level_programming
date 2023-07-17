@@ -1,2 +1,2 @@
-#!bash
+#!/bin/bash
 export CFILE=main.c;gcc -S -masm=intel -Og -fverbose-asm $CFILE
