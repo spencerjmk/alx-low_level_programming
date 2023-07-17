@@ -1,11 +1,11 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/* more headers goes there */
+
 /**
  * main - Entry point 
  *
- * Description: This program will assign a random number to the variable n 
+ * Description: This program will assign a random number to the variable n
  * @void: does nothing
  * return: Always 0 (success)
  */
