@@ -3,7 +3,8 @@
 
 /**
  * main - check the code.
- *
+ * description: check if upper
+ * @void: does nothing
  * Return: Always 0.
  */
 int main(void)
