@@ -1,4 +1,4 @@
-int _isupper (char c)
+int _isupper (int c)
 {
 	int a = 0;
 	if ( c >= 65 && c <= 90)
