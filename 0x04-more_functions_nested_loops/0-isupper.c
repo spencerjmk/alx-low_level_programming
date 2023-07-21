@@ -1,3 +1,9 @@
+/**
+ * _isupper - check uppercase char
+ * @c: the argument
+ *
+ * Return: 1 for uppercase letter 0 for others
+ */
 int _isupper (int c)
 {
 	int a = 0;
