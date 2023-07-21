@@ -1,11 +1,9 @@
-int _isupper(char c)
+int _isupper (char c)
 {
-	if (c >= 65 && c <= 90)
+	int a = 0;
+	if ( c >= 65 && c <= 90)
 	{
-		return 1;
+		a = 1;
 	}
-	else
-	{
-		return 0;
-	}
+	return a;
 }
