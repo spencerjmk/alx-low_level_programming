@@ -2,7 +2,7 @@
 #include <time.h>
 #include <stdio.h>
 /**
- * main - Entry point 
+ * main- Entry point 
  *
  * Description: This program will assign a random number to the variable n
  * @void: does nothing
